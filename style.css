@@ -1,0 +1,86 @@
+@media only screen and (max-width: 720px) {
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+    }
+
+    nav > ul > li > a {
+        display: block;
+        font-size: 12px;
+        width: 100%;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 721px) {
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+    }
+
+    nav > ul > li > a {
+        display: block;
+        font-size: 24px;
+        width: 100%;
+        text-decoration: none;
+    }
+}
+
+#main-doc {
+    overflow-y: scroll;
+}
+
+nav {
+    border-color: grey;
+    border-right: solid;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+nav > header {
+    text-align: center;
+}
+
+nav > ul {
+    padding: 0;
+    list-style-type: none;
+    width: 95%;
+}
+
+nav > ul > li {
+    border-color: blue;
+    border: solid;
+    text-align: center;
+    padding: 8px;
+}
+
+.main-doc {
+    overflow: scroll;
+}
+
+.main-section {
+    margin: 30px;
+}
+
+.main-section > p {
+    margin: 10px;
+}
+
+.main-section > code {
+    display: block;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    padding: 10px;
+}
